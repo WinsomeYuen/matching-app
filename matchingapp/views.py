@@ -112,9 +112,7 @@ def checkUsername(username):
         return False
     else:
         return True
-
-'''Checks if the email is in the database already'''
-    if(User.objects.filter(email=email).exists()):
+    if(User.objects.filter(email=email).exists()): #Checks if the email is in the database already
         return False
     else:
         return True
